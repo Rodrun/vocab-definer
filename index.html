@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vocab-Definer</title>
+    <link rel="stylesheet" href="w3.css">
+    <script src="http://code.jquery.com/jquery-3.3.0.slim.min.js"
+        integrity="sha256-AMg3I7ya76OLPD9M+Mk7kqrA29HUn/FuGBfT/9Uf9ls="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        window.$ = window.jQuery = require("jquery")
+    </script>
+    <script src="renderer.js"></script>
+</head>
+<body>
+    <div class="w3-bar">
+        <button title="Define all words" type="button" id="btnDefine" class="w3-btn w3-indigo">Define</button>
+        <button title="Revert to original, undefined text" type="button" id="btnRecover" class="w3-btn w3-indigo">Recover</button>
+    </div>
+    <textarea id="editor" wrap="off" style="width:100vw;height:100vh;" placeholder="One vocabulary word per line"></textarea>
+</body>
+</html>

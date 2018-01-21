@@ -1,0 +1,30 @@
+{
+  "name": "vocab-definer",
+  "version": "1.0.0",
+  "description": "Find all definitions of a vocabulary list",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrun/vocab-definer.git"
+  },
+  "keywords": [
+    "vocabulary"
+  ],
+  "author": "Juan Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrun/vocab-definer/issues"
+  },
+  "homepage": "https://github.com/rodrun/vocab-definer#readme",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "jquery": "^3.3.1",
+    "scrape-it": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.11.2"
+  }
+}
