@@ -11,7 +11,11 @@ const HEIGHT = 500
  * Create the main window with the initial page and default close operation.
  */
 function createMainWindow() {
-    mainWindow = new BrowserWindow({ width: WIDTH, height: HEIGHT })
+    mainWindow = new BrowserWindow({
+        width: WIDTH,
+        height: HEIGHT,
+        icon: path.join(__dirname, "resource/icon.ico")
+    })
     mainWindow.on("close", () => {
         mainWindow = null;
     })
