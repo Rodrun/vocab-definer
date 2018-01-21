@@ -1,5 +1,6 @@
 {
   "name": "vocab-definer",
+  "productName": "Vocab-Definer",
   "version": "1.0.0",
   "description": "Find all definitions of a vocabulary list",
   "main": "main.js",

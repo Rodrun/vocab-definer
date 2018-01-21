@@ -1,0 +1,12 @@
+os: x
+sudo: false
+language: node_js
+node_js:
+  - 'node'
+  - '6'
+  - '5'
+  - '4'
+install:
+  - npm install
+script:
+  - electron-packager . --platform=darwin --arch=all
