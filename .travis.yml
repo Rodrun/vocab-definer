@@ -2,11 +2,19 @@ os: x
 sudo: false
 language: node_js
 node_js:
-  - 'node'
-  - '6'
-  - '5'
+- node
+- '6'
+- '5'
 install:
-  - npm install electron-packager -g
-  - npm install
+- npm install electron-packager -g
+- npm install
 script:
-  - electron-packager . --platform=darwin --arch=all
+- electron-packager . --platform=darwin --arch=all
+- zip Vocab-Definer-darwin-x64
+deploy:
+  provider: releases
+  api_key:
+    secure: XBLz3PJVSXHXXfMMz9vO1580wN/RkSfhEMBUEJBt7tfVoC4gBkA65BzP0NGIMGQEvJ+t9GEVNC0d9M++HbZUuffxu2ozlKSu0g9FTEncgHHCtH8iM5oTQWE7dNQTb00xZbm6+tgSFRQvSZYCDSSaBBF7RFr/+/7gARFhf/3HRWR26LxV8/FHagfNbTDfF+4flmZFGd88m6fPiUZytj9GYST+LCfeqn4xuQ7glCZnyx3DZfXBgv32JXoPSEkcKnNlAmZJjnpetKsMSk/adzEbDGPx4cxm6Ssj9aZFjnFlOUM+Em3/WTsMyL0CgV5XqEA5ZenFLT58i015xbUp9uPsE/5oDF7fgSAnfCpaCSYPgNj2qMVsVMk8ivZSkok9W4fKzX+bopQpSSCEUFoj+1vx8QBLC+Br0H3iVIqKYCWH/X620iUzIIafnyjJlPLvmS8XNHu8R85A9Ip6l+RX8UGarMMf/NKyrTuuIsS8Ej6zcX7iXoKBDv2zSoComFtNJrkBTJ5KAmAyBhNe5tX2r56Srd3vN5Umb5vmRBe8Y+QliJchln+ISKqZBHwbjxP0CZrx6lCPLSYaWFbHCui5aXDN7OKgsL+BWEDGb3u4dUxyiUb1r/f2Gi0zbEYvsavGVn3A8xX9OAvcS9KguY8CdECJhtOQ/9DX6X6B/8InH8pDy64=
+  file: Vocab-Definer-darwin-x64.zip
+  on:
+    repo: Rodrun/vocab-definer
